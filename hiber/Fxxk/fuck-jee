@@ -1,0 +1,5 @@
+vim /etc/mysql/my.cnf  comment out  'skip-networking'
+
+just@src $javac -cp .:../WebRoot/WEB-INF/lib/* com/ecommerce/hiBean/*.java
+just@src $javac -cp .:../WebRoot/WEB-INF/lib/* com/ecommerce/hiDAO/*.java
+

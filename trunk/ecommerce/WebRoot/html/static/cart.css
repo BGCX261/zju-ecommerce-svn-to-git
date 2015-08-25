@@ -1,0 +1,322 @@
+﻿/*===========================================================*/
+/*张琛的 css*/
+
+/*星号应该可以去掉吧？*/
+#cart-item-list * {
+	background: #ffffff ;
+}
+
+#cart-active-items {
+	padding: 15px 0;
+	overflow: auto;
+}
+
+#cart-active-items .subtotal{
+	float:right;
+	font-weight:bold;
+	padding:8px 0;
+}
+
+/*购物车 表头------------------------------------------------*/
+.cart-item-head{
+	width:100%;
+}
+.cart-item-head td{
+	font-weight:bold;
+	padding-bottom:3px;
+	padding-top:4px;
+}
+.cart-item-head td.c3{
+	min-width:85px;
+}
+.cart-item-head td.c4{
+	min-width:85px;
+}
+
+/*购物车列表【多项】-------------------------------------------*/
+.cart-item-list table{
+	width:100%;
+	border-collapse:collapse;
+	/*border 用来校准， 将来再置零---------------------*/
+/*border: 1px solid;*/	
+	
+}
+.cart-item-list a, .cart-item-list a:visited{
+	color: #004b91;
+	text-decoration: none;
+}
+.cart-item-list a:hover{
+	color:#cc6600;
+}
+.cart-item-list .buttons a{
+	text-decoration:underline;
+}
+
+/*购物车里某一项-----------------------------------------*/
+.cart-item{
+	background-color:#ffffff;
+	border-top:1px dotted #cccccc;
+	width: 100%;
+}
+.cart-item td{
+	padding:15px 0;
+}
+
+.cart-item td p{
+	margin:0 0 5px;
+}
+.cart-item td.c1{
+	width:120px;
+	
+}
+.cart-item .title a{
+	font-size:14px;
+	font-weight:bold;
+}
+.cart-item .quantity input{
+	width:35px;
+}
+
+.cart-item-pagination{
+	border-top:1px dotted #cccccc;
+	padding: 8px 0;
+}
+
+
+/*----------------------------------------右侧一键结算之类的-*/
+
+#right .checkout-box, #right .payoff-box
+{
+	border: 3px solid white;
+	
+	
+	margin: 15px 0;
+/*	position: relative;
+*/
+	width: 290px;
+	-webkit-width: 289px;
+	
+	padding: 15px;
+	position:relative;
+	
+/*	border-radius: 4px;
+*/}
+#right .round-box-tl{
+	background-position:0 -20px;
+	left: -1px;
+	top: -1px;
+}
+#right .round-box-tr{
+	background-position:-10px -20px;
+	right: -1px;
+	top: -1px;
+}
+#right .round-box-bl{
+	background-position:0 -30px;
+	left: -1px;
+	bottom: -1px;
+}
+#right .round-box-br{
+	background-position:-10px -30px;
+	right: -1px;
+	bottom: -1px;
+}
+#right .round-box-tl, #right .round-box-tr, #right .round-box-bl, #right .round-box-br{
+	background-image:: url(images/round-box.png) ;
+	background-repeat:no-repeat;
+	width:10px;
+	height:10px;
+	position:absolute;
+	z-index:1;
+}
+
+#right form{
+	margin:0;
+	padding:0;
+}
+#right p{
+	margin:4px 0;
+	text-align:center;
+}
+#right h3{
+	margin:0;
+}
+
+
+
+
+
+/*杂项： 字体大小，对齐， 颜色， 输入法开关。。。------------------*/
+.ourprice{
+	color:#990000;
+	font-weight:bold;
+}
+.savings{
+	color:#990000;
+}
+
+
+.txtsmall {
+	font-size:11px;
+	line-height:16px;
+}
+
+.txtnormal { font-size:12px; }
+
+.txtlarge {
+	font-size:14px;
+	line-height:19px;
+}
+
+.txtright { text-align:right; }
+
+.txtleft { text-align:left; }
+
+.txtctr { text-align:center; }
+
+.tiny{
+	font-size:12px;
+}
+
+.red{ color:#F00;}
+.green{ color: #060;}
+.drkgry{	color:#333;}
+.gry{ color:#666;}
+.white{color:#fff;}
+
+.ime-disabled{ime-mode: disabled;}
+.ime-active{ime-mode: active;}
+
+.roweven{
+	background-color:rgba(215,234,227,0.3);
+	background-color:rgba(222,222,132,0.51);
+}
+.rowodd{
+	background-color:#ffffff;
+}
+
+
+/*===========================================check-part=张琛*/
+
+body *{
+	margin:0;
+	padding:0;
+	font-family:"微软雅黑";
+}
+/*-----------------------------------------------开头提示框*/
+
+ h1{
+	color:#EF6410;
+	font-size:24px;
+	margin:0;
+}
+.message{
+	background:#ffffcc;
+	border:1px solid #F76F00;
+	color:#000;
+	margin:10px 0;
+	padding:10px;
+}
+.message .iconinfo{
+	background: url(images/icons.gif) ;
+	display: block;
+	float: left;
+	height: 25px;
+	width:25px;
+	height:25px;
+}
+
+/*#save-default-box{
+	padding:0 45px ;
+}
+*/
+.message h6{
+	font-size:14px;
+	font-weight:bold;
+	margin:0 0 0.25em 35px;
+}
+.message p{
+	margin:0 0 0.25em 35px;
+}
+
+
+/*------------------------------------------------详细信息框*/
+div .orangebox{
+	background-color:#FFF8DF;
+	border:1px solid #FDC95E;
+	border-radius: 4px;
+
+}
+div .orangebox a{
+	text-decoration:underline;
+	color:#00C;
+}
+div .orangebox a:hover{
+	color:#F60;
+}
+
+div .whitebox{
+	background-color:#fff;
+	border: 0 none;
+	margin:5px;
+	border-radius:4px;
+	padding: 10px;
+	overflow:auto;
+}
+#details-r1 .address{
+	padding:0;
+	margin:0;
+	width:50%;
+	float:left;
+}
+#details-r1 .payment{
+	float:left;
+}
+
+.goods-list .item{
+	margin-bottom:15px;
+	margin-left:10px;
+	overflow:auto;
+	width: 100%;
+	border:0;
+	border-top:1px dotted #444;
+}
+.item-image, .item-description{
+	float:left;
+	overflow:auto;
+}
+.item-image{	
+/*	height:110px;
+	width:100px;
+*/
+}
+
+.item-description{
+	height:110px;
+/*	width:100%;
+*/
+}
+.goods-list{
+	float:left;
+	width:50%;
+}
+.ship-options{
+	float:right;
+	width:40%;
+	margin-top:-40px;
+}
+
+.ship-options h4{
+	color:#F30;
+	margin-top:20px;
+}
+
+/*#right hr{
+	color:#444;
+	height:1px;
+}
+*/
+
+#right .payoff-box{
+	position:fixed;
+}

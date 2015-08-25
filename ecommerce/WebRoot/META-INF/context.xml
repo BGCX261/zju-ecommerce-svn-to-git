@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<Context path="/ecommerce"
+		 docBase="ecommerce"
+		 debug="5" crossContext="true"
+		 reloadable="true"
+		 cachingAllowed="true"
+		 cacheMaxSize="20480"
+		 cacheTTL="10000">
+<WatchedResource>WEB-INF/web.xml</WatchedResource>
+<Resource
+	name="jdbc/ecommerce"
+	auth="Container"
+	type="javax.sql.DataSource"
+	driverClassName="com.mysql.jdbc.Driver"
+	url="jdbc:mysql://localhost:3306/ecommerce?autoReconnect=true"
+	username="root"
+	password="051210"
+	maxActive="20"
+	maxIdle="10"
+	maxWait="-1">
+</Resource>
+</Context>
+
+<!-- 
+<Context> 
+     <Resource name="jdbc/TaobaoJudge" auth="Container" type="javax.sql.DataSource" 
+     maxActive="50" maxIdle="30" maxWait="10000" logAbandoned="true" 
+     username="root" password="051210" driverClassName="com.mysql.jdbc.Driver" 
+     url="jdbc:mysql://localhost:3306/taobaojudge" /> 
+</Context>
+-->

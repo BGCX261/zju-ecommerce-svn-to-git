@@ -1,0 +1,541 @@
+﻿/*所有的尺寸在这里*/
+*
+{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "微软雅黑", sans-serif;
+    font-size: 14px;
+}
+.clear{ clear: both; }
+a
+{
+    color: #666;
+}
+a:hover
+{
+    color: #08c;
+}
+select
+{
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+}
+input[type='text'], input[type='password']
+{
+    width: 120px;
+    height: 20px;
+    
+    
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+input[type='text']:hover, input[type='password']:hover, select:focus, input[type='text']:focus, input[type="password"]:focus, #addItem textarea:focus
+{
+    outline: 0;
+    box-shadow: inset 0 0 10px #dde2e8,
+                0 0 10px #2c2d2e;
+    -webkit-box-shadow:: inset 0 0 10px #dde2e8,
+                0 0 10px #2c2d2e;
+    -moz-box-shadow:: inset 0 0 10px #dde2e8,
+                0 0 10px #2c2d2e;
+}
+img
+{
+    border: 0px;    
+    margin: 0px;
+    padding: 0px;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+h3
+{
+    margin: 0;
+    padding: 4px 0px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px #000000;
+    font-size: 18px;
+}
+.btn, input[type="submit"], .buyNow
+{
+    background: url('btn-green.jpg');
+    overflow: hidden;
+    color: White;
+    text-shadow: 0px 2px 2px #000000;
+    
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    
+    padding: 2px;
+    cursor: pointer;   
+}
+.btn:hover, input[type="submit"]:hover, .buyNow:hover
+{
+    box-shadow: 0px 0px 10px #2c2d2e;
+    -webkit-box-shadow: 0px 0px 10px #2c2d2e;
+    -moz-box-shadow: 0px 0px 10px #2c2d2e;
+    border: 0;
+}
+
+body
+{
+    width: 960px;
+    margin: auto;   /*居中*/
+    padding: 0px;
+    background: url('background.jpg');
+}
+#footer
+{
+    margin: 20px 0px;
+    height: 60px;
+    line-height: 60px;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    
+    vertical-align: middle;
+    text-align: center;
+    text-shadow: 0px 0px 10px #ffffff;
+    box-shadow: inset 0px 0px 10px #ffffff;
+    -webkit-box-shadow: inset 0px 0px 10px #ffffff;
+    -moz-box-shadow: inset 0px 0px 10px #ffffff;
+}
+
+#navigation
+{
+    float: left;
+    width: 960px;
+    margin: 4px 0px;
+    height: 30px;
+    
+    box-shadow: inset 0 0 10px #2c2d2e;
+    -webkit-box-shadow: inset 0 0 10px #2c2d2e;
+    -moz-box-shadow: inset 0 0 10px #2c2d2e;
+    
+    border-bottom-right-radius: 5px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radiu: 5px;
+}
+#navigation ul
+{
+    padding: 0px 20px;
+}
+#navigation ul li
+{
+    float: left;
+    padding: 0 4px;
+    line-height: 200%;
+    color: #ffffff;
+    font-size: 14px;
+    text-shadow: 0px 2px 2px #000000;
+}
+#navigation ul li a{ color: #eee; }
+#navigation ul li a:hover{ color: #08c; }
+#menu { float: right; text-align: center; z-index: 999;}
+#menu li
+{
+    float: none;
+    width: 70px;
+	
+	z-index: 999;
+}
+/*下拉菜单*/
+#menu li ul
+{
+    display: none;
+    float: none;
+	z-index: 999;
+}
+#menu li:hover ul
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 84px;
+    width: 78px;
+    
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    
+    border-bottom-right-radius: 4px; 
+    border-bottom-left-radius: 4px;  
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    
+    box-shadow: 0px 0px 10px #555;
+	
+	z-index: 999;
+}
+#menu li:hover ul li:hover
+{
+    background-color: #666;
+    
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	
+	z-index: 999;
+}
+
+#right
+{
+    width: 300px;
+    padding: 0px 20px 10px 0px;    /* 上30px，右20px，下10px， 左0px */
+    
+    float: right;
+    line-height: 150%;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    
+    box-shadow: inset 0 0 10px #2c2d2e;
+    -webkit-box-shadow: inset 0 0 10px #2c2d2e;
+    -moz-box-shadow: inset 0 0 10px #2c2d2e;
+}
+
+#column
+{
+    padding: 4px 20px;
+}
+#column_title
+{
+    padding: 4px 0px;
+}
+#timeline
+{
+    padding: 10px 20px;
+}
+#timeline_title li
+{
+    float: left;
+    padding: 0px 2px;
+}
+#timeline_list
+{
+    padding: 2px 0px;
+}
+    
+#page
+{
+    width: 600px;/*加上左右padding，共占据页宽640px*/
+    margin: 0px;
+    padding: 0px 0;             /* 上下30px，左右20px */
+}
+#search
+{
+    line-height: 100px;
+    display: inline;
+    text-align: center;
+    
+    z-index: -1;
+}
+#search form{ display: inline; z-index: -1; }
+#logo
+{
+    position: relative;
+    left: 150px;
+    top: 4px;
+	z-index: -999;
+}
+
+#tabs
+{
+    height: 25px;
+    margin: 0 0 5px 0;
+    
+    box-shadow: inset 0 0 10px #2c2d2e;
+    -webkit-box-shadow: inset 0 0 10px #2c2d2e;
+    -moz-box-shadow: inset 0 0 10px #2c2d2e;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+#tabs a{ color: #eee; }
+#tabs ul li
+{
+    float: left;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    
+    color: #aeaeae;
+    line-height: 25px;
+    text-shadow: 0px 2px 2px #000000;
+    
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    
+}
+#tabs ul li:hover
+{
+    box-shadow: inset 0px 0px 10px #fff;
+}
+
+.slide, .item
+{
+    background-color: White;
+    border: 2px solid white;
+    box-shadow: inset 0 0 10px #dde2e8,
+                inset 0 0 10px #dde2e8;
+    -webkit-box-shadow: inset 0 0 10px #dde2e8,
+                inset 0 0 10px #dde2e8;
+    -moz-box-shadow: inset 0 0 10px #dde2e8,
+                inset 0 0 10px #dde2e8;
+}
+
+.slide
+{
+    padding: 0px;
+    margin: 0 0 10px;
+    height: 290px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.item
+{
+    
+    margin: 4px 0px;
+    padding: 0;
+
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.item.info
+{
+    display: block;
+    width: 180px;
+    height: 196px;
+    float: right;
+    line-height: 150%;
+    margin: 0px;
+    padding: 4px 0px;
+    border: 0px;
+    background: #f2f2f2;
+    text-align: center;
+}
+.item.info img{ border: 0px; }
+.item.info.text
+{
+    height: 165px;
+    padding: 0px;
+    margin: 0px;
+}
+.item.info.buybtns
+{
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+}
+.item.info.buybtns a { color: #ffffff; }
+.buyNow
+{
+    background: url('btn-orange.jpg');
+}
+
+/* register.html  editInfo.html  myAccount.html */
+#register
+{
+    padding:20px;
+    color: White;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    
+/*    box-shadow: inset 0 0 10px #2c2d2e;
+    -webkit-box-shadow: inset 0 0 10px #2c2d2e;
+    -moz-box-shadow: inset 0 0 10px #2c2d2e; */
+    border: 1px solid white;
+}
+    
+.reg_attr
+{
+    display: block;
+    line-height: 200%;
+}
+#register p input
+{
+    width: 200px;
+}
+
+/* merchandise.html & merchandises.html  orders.html */
+/* 单一商品详情 商品列表 */
+#singleMup
+{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.singleM input{ width: 50px; border: 2px solid #dde2e8; }
+.singleM a:hover{ color: White; }
+.singleM.up
+{
+    
+    height: 280px;
+    line-height: 300px;
+    margin: 10px 0;
+    padding: 10px 10px;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: block;
+    
+    text-align: center;
+}
+.singleM.up.left
+{
+    display: inline-block;
+    width: 250px;
+    height: 280px;
+    line-height: 30px;
+    margin: 0 10px 0 0;
+    padding: 4px;
+    
+    text-align: center;
+}
+.singleM.up.left img
+{
+    width: 250px;
+    height: 250px;
+}
+.singleM.up.right
+{
+    display: inline-block;
+    float: right;
+    width: 300px;
+    height: 280px;
+    line-height: 25px;
+    margin: 0;
+    padding: 4px;
+    text-align: left;
+}
+.singleM.up.right.text
+{
+    height: 240px;
+    margin: 0 4px 4px 0;
+    
+    
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    
+    color: White;
+    text-shadow: 0px 2px 2px #000000;
+}
+
+#mDetails
+{
+    border: 1px solid white;
+    color: #ffffff;
+    padding: 20px;
+    
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+/* orders.html */
+/* 我的订单页面 */
+#searchOrders
+{
+    margin: 8px 0px;
+}
+#orders
+{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+#orders a{ color: #eee; }
+#orders a:hover{ color: #08c; }
+.function
+{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    
+    color: White;
+}
+.orderRecord div, #ordersTitle div
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.col1{ width: 135px; padding: 2px; text-align: left; }
+.col2{ width: 200px; text-align: left; }
+.col3{ width: 100px; text-align: center; }
+.col4{ width: 90px; text-align: center; }
+.col5{ padding: 0 0 0 5px;}
+.orderRecord .col3{ border-left: 1px solid white; }
+.orderRecord .col4{ border-left: 1px solid white; border-right: 1px solid white;}
+.orderRecord
+{
+    border-top: 1px solid white;
+    
+}
+
+/* orderDetail.html */
+/* 订单详情页面 */
+#orderDetailUp
+{
+    border-top: 1px solid white;
+    padding: 10px 0px;
+    color: #ffffff;
+}
+#orderDetailDown
+{
+   border: 2px solid white; 
+   border-radius: 5px; 
+   -webkit-border-radius: 5px; 
+   -moz-border-radius: 5px;
+   color: #eee;
+}
+#orderDetailDown strong{ color: White; }
+
+/* addItem.html */
+/* 创建商品页面 */
+#addItem
+{
+	border-top: 1px solid white;
+	color: #dddddd;
+}
+#addItem .reg_attr
+{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	color: white;
+}
+#addItem textarea
+{
+	width: 450px;
+	height: 50px;
+	margin: 3px 0 3px 3px;
+	
+	border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+#addItem textarea[name="item_detail"]
+{
+	height: 300px;
+}
+#howOld, #yunfei { display: none; }
